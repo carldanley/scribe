@@ -1,0 +1,34 @@
+server:
+  address: "https://my.vault.address"
+  roleID: "16c0b983-c4f4-69ed-1017-bf720f1919f6"
+  secretID: "f6dc09d6-16bc-75ed-ed76-303ccab5af4c"
+tomes:
+- instrument:
+    type: "file"
+    path: "./file-name-a.env"
+  secrets:
+  - path: "secrets/scribe/general-app-settings"
+    watchForChanges: true
+    watchInterval: 1
+    fields:
+    - name: "AVOID_THIS_KEY"
+      omit: true
+  - path: "secrets/scribe/my-app"
+    watchForChanges: true
+    watchInterval: 1
+  - path: "secrets/scribe/globals/aws"
+    fields:
+    - name: "AWS_ACCESS_KEY"
+    - name: "DEFAULT_REGION"
+      mapTo: "AWS_DEFAULT_REGION"
+    - name: "SECRET_KEY"
+      mapTo: "AWS_SECRET_KEY"
+  - path: "secrets/scribe/should-be-skipped"
+- instrument:
+    type: "file"
+    path: "./file-name-b.env"
+  secrets:
+  - path: "secrets/scribe/my-app"
+    watchForChanges: true
+    watchInterval: 1
+  - path: "secrets/scribe/should-be-skipped"

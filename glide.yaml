@@ -1,0 +1,97 @@
+package: github.com/carldanley/scribe
+import:
+- package: github.com/Masterminds/semver
+  version: 15d8430ab86497c5c0da827b748823945e1cf1e1
+- package: github.com/Masterminds/sprig
+  version: ecbec66c2936b6503e7c9e29123e343be03ac8eb
+- package: github.com/aokoli/goutils
+  version: 3391d3790d23d03408670993e957e8f408993c34
+- package: github.com/fatih/structs
+  version: f5faa72e73092639913f5833b75e1ac1d6bc7a63
+- package: github.com/fsnotify/fsnotify
+  version: 4da3e2cfbabc9f751898f250b49f2439785783a1
+- package: github.com/golang/snappy
+  version: 553a641470496b2327abcac10b36396bd98e45c9
+- package: github.com/hashicorp/errwrap
+  version: 7554cd9344cec97297fa6649b055a8c98c2a1e55
+- package: github.com/hashicorp/go-cleanhttp
+  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+- package: github.com/hashicorp/go-multierror
+  version: 83588e72410abfbe4df460eeb6f30841ae47d4c4
+- package: github.com/hashicorp/go-rootcerts
+  version: 6bb64b370b90e7ef1fa532be9e591a81c3493e00
+- package: github.com/hashicorp/hcl
+  version: 23c074d0eceb2b8a5bfdbb271ab780cde70f05a8
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- package: github.com/hashicorp/vault
+  version: bf9ddf52ce6d49f1432c48ea80dfea6ae76c1064
+  subpackages:
+  - api
+  - helper/compressutil
+  - helper/jsonutil
+  - helper/parseutil
+- package: github.com/huandu/xstrings
+  version: 37469d0c81a7910b49d64a0d308ded4823e90937
+- package: github.com/imdario/mergo
+  version: 7fe0c75c13abdee74b09fcacef5ea1c6bba6a874
+- package: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- package: github.com/magiconair/properties
+  version: 49d762b9817ba1c2e9d0c69183c2b4a8b8f1d934
+- package: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
+- package: github.com/mitchellh/mapstructure
+  version: 06020f85339e21b2478f756a78e295255ffa4d6a
+- package: github.com/pelletier/go-toml
+  version: 4e9e0ee19b60b13eb79915933f44d8ed5f268bdd
+- package: github.com/satori/go.uuid
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
+- package: github.com/sethgrid/pester
+  version: 0af5bab1e1ea2860c5aef8e77427bab011d774d8
+- package: github.com/spf13/afero
+  version: 8d919cbe7e2627e417f3e45c3c0e489a5b7e2536
+  subpackages:
+  - mem
+- package: github.com/spf13/cast
+  version: acbeb36b902d72a7a4c18e8f3241075e7ab763e4
+- package: github.com/spf13/cobra
+  version: 2da4a54c5ceefcee7ca5dd0eea1e18a3b6366489
+- package: github.com/spf13/jwalterweatherman
+  version: 12bd96e66386c1960ab0f74ced1362f66f552f7b
+- package: github.com/spf13/pflag
+  version: 4c012f6dcd9546820e378d0bdda4d8fc772cdfea
+- package: github.com/spf13/viper
+  version: 4dddf7c62e16bce5807744018f5b753bfe21bbd2
+- package: golang.org/x/crypto
+  version: 244f6ce1f09cc9f3d7bffe29b033aaa13c0cc2f3
+  subpackages:
+  - pbkdf2
+  - scrypt
+- package: golang.org/x/net
+  version: 9dfe39835686865bff950a07b394c12a98ddc811
+  subpackages:
+  - http2
+  - http2/hpack
+  - idna
+  - lex/httplex
+- package: golang.org/x/sys
+  version: bf42f188b9bc6f2cf5b8ee5a912ef1aedd0eba4c
+  subpackages:
+  - unix
+- package: golang.org/x/text
+  version: 88f656faf3f37f690df1a32515b479415e1a6769
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- package: gopkg.in/yaml.v2
+  version: 287cf08546ab5e7e37d55a84f7ed3fd1db036de5
